@@ -31,4 +31,8 @@ See the [source code](lib/logstash/outputs/unomaly.rb) for the full list of opti
  ## Contributing
  
  Bug reports and pull requests are welcome. This project is intended to
- be a safe, welcoming space for collaboration. 
+ be a safe, welcoming space for collaboration.
+ 
+ ## Development
+ 
+We use docker to build the plugin. You can build it by running  `docker-compose run jruby gem build logstash-output-unomaly.gemspec `
