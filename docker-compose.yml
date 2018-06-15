@@ -1,0 +1,6 @@
+jruby:
+  build: .
+  volumes:
+    - ./:/unomaly
+  command:
+    - sh
