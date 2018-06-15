@@ -1,10 +1,17 @@
 dist: trusty
 language: ruby
 jdk: openjdk8
-
 rvm:
   - jruby-19mode
 
 script:
   - bundle install
   - bundle exec rspec spec
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: P9KuV5IOmZG486xg2py5b7/XOyvi/EU+ngRdBKXEGclCfgMjwZwILYoUR0NaExrOsjrqXhl9gv8qtc4jx789JnMKSGEdjRIee7yC4vVJv4zX8e4M9vplHlkDgQwErtjxKdodlgctlSPDKxudjzsHUfC2T2+DXGYEv2uEeaZ/9wxBBIV3V+0NRSr42ySizG9pTC04A6kOO5nbsQFKzSuyUl6R/k7PD58knN+JHmw0xRD+ndZjUPNNi4o6h4b22lXimtiLMMXnCMfVZISK8XimK2T6dZBoxTRDFwccBNpEYIkRXmo6GG11HSygosO2c29oGu/R9ENjf7MWNEPqJBKfjxLvubGjJDA+wVDAkC3Uf4mLZ255FuVHIXv/UOTEzxL9OdQtDLO8DAI8EV7bXPN8jJXEyHIBo41nneoCAYYi2YSSsI7d8XMYvlaULPtncHt7m88WUZq6zdMO8QwRvgSLnGvKV20lu/ZslSDsetnwYWn0Gf/x5k7VmI0APcZ0YyqXhf+cSB4t4iVFzfjbbw/SqtQEn6kEupXLw06QdEvlNJXYuWkyGL3mRNKQ7p8IG6rLmnSzxXOo2XRPiK7OUhLmxBpWMDTqlWZTP+udRxTKSytyHSwzNApfPywU/94h3iuQckc1cyKXsMZ1YWkhMxRBEayIDeoRVtoF7Suau1EBIVM=
+  gem: logstash-output-unomaly
+  on:
+    tags: true
