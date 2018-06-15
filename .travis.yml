@@ -6,4 +6,5 @@ rvm:
   - jruby-19mode
 
 script:
+  - bundle install
   - bundle exec rspec spec
