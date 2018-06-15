@@ -1,0 +1,9 @@
+dist: trusty
+language: ruby
+jdk: openjdk8
+
+rvm:
+  - jruby-19mode
+
+script:
+  - bundle exec rspec spec
