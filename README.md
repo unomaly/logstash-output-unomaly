@@ -8,7 +8,7 @@ This plugin sends Logstash events to the [Unomaly](https://www.unomaly.com) inge
 ```
 output {
     unomaly {
-        host => "https://your-unomaly-instance:443
+        host => "https://your-unomaly-instance:443"
     }
 }
 ```
@@ -18,7 +18,7 @@ output {
 
 | Option                     | Description                                                                      | Default    |
 |----------------------------|----------------------------------------------------------------------------------|------------|
-| host                       | Unomaly instance address. Must define full path such as "https://my-instance:443 | No default |
+| host                       | Unomaly instance address. Must define full path such as "https://my-instance:443"| No default |
 | message_key                | The key in the Logstash event that Unomaly should use for anomaly detection.     | "message"  |
 | source_key                 | The event key defining the Unomaly system.                                       | "host"     |
 | ssl_certificate_validation | Enable or disable SSL certificate validation                                     | "strict"   |
