@@ -2,9 +2,15 @@
 
 [![Build Status](https://travis-ci.org/unomaly/logstash-output-unomaly.svg?branch=master)](https://travis-ci.org/unomaly/logstash-output-unomaly)
 
-This plugin sends Logstash events to the [Unomaly](https://www.unomaly.com) ingestion API (min version Unomaly 2.27). The minimal configuration looks like this:
+This plugin sends Logstash events to the [Unomaly](https://www.unomaly.com) ingestion API (min version Unomaly 2.27).
 
+# Getting started
 
+## Installing through rubygems
+
+`logstash-plugin install logstash-output-unomaly`
+
+## Minimal configuration
 ```
 output {
     unomaly {
@@ -12,6 +18,7 @@ output {
     }
 }
 ```
+
 
 # Important options
 
