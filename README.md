@@ -1,5 +1,3 @@
-# Logstash output plugin for Unomaly
-
 [![Build Status](https://travis-ci.org/unomaly/logstash-output-unomaly.svg?branch=master)](https://travis-ci.org/unomaly/logstash-output-unomaly)
 
 This plugin sends Logstash events to the [Unomaly](https://www.unomaly.com) ingestion API (min version Unomaly 2.27).
