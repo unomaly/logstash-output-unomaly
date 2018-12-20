@@ -27,6 +27,7 @@ output {
 | message_key                | The key in the Logstash event that Unomaly should use for anomaly detection.     | "message"  |
 | source_key                 | The event key defining the Unomaly system.                                       | "host"     |
 | ssl_certificate_validation | Enable or disable SSL certificate validation                                     | "strict"   |
+| keep_timestamp             | If false, Unomaly will use the ingestion timestamp as the event timestamp        | true       |
 
 See the [source code](lib/logstash/outputs/unomaly.rb) for the full list of options
 
