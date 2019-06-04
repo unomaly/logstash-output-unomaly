@@ -304,8 +304,8 @@ class LogStash::Outputs::Unomaly < LogStash::Outputs::Base
       documents = []
       chunk.each do |event|
         unomaly_event = {
-            message: event.get(@message_key),
-            source: event.get(@source_key),
+          message: event.get(@message_key).to_s,
+          source: event.get(@source_key).to_s,
         }
 
         metadata = event.to_hash
