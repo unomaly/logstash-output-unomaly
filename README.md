@@ -6,6 +6,8 @@ This plugin sends Logstash events to the [Unomaly](https://www.unomaly.com) inge
 
 ## Installing through rubygems
 
+Run the following on your Logstash instance
+
 `logstash-plugin install logstash-output-unomaly`
 
 ## Minimal configuration
