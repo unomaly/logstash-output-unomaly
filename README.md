@@ -33,6 +33,7 @@ output {
 
 See the [source code](lib/logstash/outputs/unomaly.rb) for the full list of options
 
+The syntax for `message_key` and `source_key` values are available in the [Logstash Event API Documentation](https://www.elastic.co/guide/en/logstash/current/event-api.html)
 
 ## Known issues 
  - Installation of the plugin fails on Logstash 6.2.1.
